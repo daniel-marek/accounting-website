@@ -1,0 +1,66 @@
+@use "../abstracts/" as *;
+
+.contact {
+  &__title p a {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  &__info {
+    h3 {
+      margin-bottom: 0.2rem;
+    }
+    ul li {
+      position: relative;
+      padding-left: 7rem;
+      font-size: 1rem;
+      span {
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  &__box {
+    border: $border;
+    border-radius: $border-radius;
+    padding: 1.5rem;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    &-div {
+      display: flex;
+      flex-direction: column;
+      row-gap: .5rem;
+      height: 4.3rem;
+    }
+    &-tag {
+      font-weight: 500;
+    }
+    &-input {
+      width: 100%;
+      height: 100%;
+      border: 2px solid var(--details-grey);
+      border-radius: $border-radius;
+      padding: 0 .5rem;
+    }
+    &-area {
+      height: 10rem;
+      & textarea {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        resize: none;
+      }
+    }
+  }
+}
+
+
+.line-left {
+  margin-inline: 0;
+}

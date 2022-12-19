@@ -1,0 +1,1 @@
+Složka base/ obsahuje to, co bychom mohli nazvat kotevním kódem (boilerplate) projektu. V ní můžete najít některá typografická pravidla a pravděpodobně i soubor stylů (který jsem zvyklý nazývat _base.scss), který definuje některé standardní styly pro běžně používané prvky HTML.

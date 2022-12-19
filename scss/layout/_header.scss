@@ -1,0 +1,84 @@
+@use "../abstracts/" as *;
+
+.header {
+  width: 100%;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    height: 60px;
+  }
+  &__menu {
+    // position: fixed;
+    //   background: var(--bg-white-alt);
+    //   padding: 2.5rem;
+    //   width: 100%;
+    //   top: -100%;
+    @include breakpoint-down (medium) {
+      position: fixed;
+      background: var(--bg-white-alt);
+      padding: 2.5rem;
+      width: 100%;
+      height: 100%;
+      top: -100%; //when click $header-height 5.625rem
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transition: .4s;
+      z-index: 11;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.5rem;
+  }
+  &__btn {
+    display: none;
+    &-hamb {
+      background: transparent;
+      border: 2px solid var(--details-black);
+      &:hover {
+        color: var(--text-white);
+        border: 0;
+      }
+    }
+  }
+
+  &__toggle, &__close {
+    font-size: 1.5rem;
+    cursor: pointer;
+  } 
+
+  &__close {
+    display: none;
+  }
+}
+
+/* Show menu */
+.show-menu {
+  top: calc($header-height);
+}
+
+.hide-toggle {
+  display: none;
+}
+
+.show-close {
+  display: block;
+}
+
+/*Scroll menu */
+.scroll-header {
+  background: var(--bg-white-alt);
+}

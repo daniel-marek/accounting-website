@@ -1,0 +1,59 @@
+@use "../abstracts/functions" as f;
+
+// fonts, colors, containers maximum width, breakpoints map
+
+/*========== VARIABLES CSS ==========*/
+:root {
+  /*======= Colors =======*/
+  --bg-white: #FEFAFA;
+  --bg-white-alt: #FFFFFF;
+  --bg-grey: #B9BABB;
+  --text-black: #333533;
+  --text-white: #fff;
+  --details-bronz: #944B22;
+  --details-grey: #B9BABB;
+  --details-black: #333533;
+}
+  /*======= Fonts =======*/
+  $title-font: 'Playfair Display', serif;
+  $body-font: 'Montserrat', sans-serif;
+
+  /*======= Heights =======*/
+  $header-height: 5.625rem;
+
+  /*======= Borders =======*/
+  $border-radius: 5px;
+  $border: 3px solid var(--details-grey);
+
+  /*======= Box shadow =======*/
+  
+
+  /*======= Breakpoints map =======*/
+
+  // 700px, 900px, 1440px
+  $breakpoints-up: (
+    "medium": f.em(700),
+    "large": f.em(900),
+    "xlarge": f.em(1440),
+  );
+
+  // 699.98px, 899.98px, 1439.98px
+  $breakpoints-down: (
+    "small": f.em(699.98),
+    "medium": f.em(899.98),
+    "large": f.em(1439.98),
+  );
+
+  @mixin breakpoint($size) {
+    @media (min-width: map-get($breakpoints-up, $size)) {
+      @content;
+    }
+  }
+
+  @mixin breakpoint-down($size) {
+    @media (max-width: map-get($breakpoints-down, $size)) {
+      @content;
+    }
+  }
+
+

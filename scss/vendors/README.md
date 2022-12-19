@@ -1,0 +1,3 @@
+Většina projektů má složku vendors/ obsahující všechny soubory CSS z externích knihoven a frameworků - Normalize, Bootstrap, jQueryUI, FancyCarouselSliderjQueryPowered atd. Odložení těchto souborů do stejné složky je dobrým způsobem, jak říct "Hej, tohle není ode mě, není to můj kód, není to moje zodpovědnost".
+
+Pokud musíte přepsat část nějakého dodavatele, doporučuji mít osmou složku s názvem vendors-extensions/, ve které můžete mít soubory pojmenované přesně podle dodavatelů, které přepisují. Například vendors-extensions/_bootstrap.scss je soubor obsahující všechna pravidla CSS určená k přepsání některých výchozích CSS Bootstrapu. Je to proto, aby se zabránilo úpravám samotných souborů vendorů, což obecně není dobrý nápad.

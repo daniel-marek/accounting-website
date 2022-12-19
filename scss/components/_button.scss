@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.btn, button {
+  background: var(--details-grey);
+  padding: 19px 32px;
+  border-radius: $border-radius;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  font-size: rem(14);
+  font-weight: 500;
+  transition: .5s;
+  &:hover {
+    background: var(--details-bronz);
+    color: var(--text-white);
+  }
+}
+
+button {
+  border: none;
+  font-family: $body-font;
+}

@@ -1,0 +1,7 @@
+@use "../abstracts/" as *;
+
+.hero {
+  padding-top: calc($header-height + 1rem);
+  padding-bottom: 2rem;
+}
+

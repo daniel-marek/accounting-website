@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ========== GOOGLE FONTS ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- ========== FONT AWESOME ========== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ========== CSS ========== -->
+  <link rel="stylesheet" href="dist/main.css">
+
+  <!-- ========== FAVICON ========== -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+
+  <title>Marcela Havlíčková - účetnictví</title>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+
+  <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#">
+          <img class="nav__logo" src="img/logo.svg" alt="logo">
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__link"><a href="#uvod">Úvod</a></li>
+            <li class="nav__link"><a href="#sluzby">Služby</a></li>
+            <li class="nav__link"><a href="#o-mne">O mně</a></li>
+            <li class="nav__link"><a href="#cenik">Ceník</a></li>
+            <li class="nav__link"><a href="#kontakt">Kontakt</a></li>
+            <li class="nav__link"><a class="nav__btn-hamb btn" href="#kontakt">Nezávazná poptávka</a></li>  
+          </ul>
+        </div>
+      <a href="#kontakt" class="nav__btn btn">Nezávazná poptávka</a>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars icon-black"></i>
+      </div>
+      <div class="nav__close" id="nav-close">
+        <i class="fa-solid fa-xmark icon-black"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+
+    <section class="hero">
+      <div class="hero__content container grid">
+        <div class="hero__image">
+          <img src="img/uvod.jpg" alt="">
+        </div>
+        <div class="hero__description">
+          <h1>Účetnictví, mzdy a personalistika</h1>
+          <p>Jmenuji se Marcela Havlíčková a nabízím komplexní služby v oblasti vedení účetnictví, mezd a zpracování daní. Své služby nabízím především v Kutné Hoře a okolí.</p>
+          <a href="#kontakt" class="hero__btn btn">Domluvit si schůzku</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICE ========== -->
+
+    <section class="service section">
+      <div class="service__content container grid">
+        <h2 class="section__title">Služby</h2>
+        <div class="service__items">
+
+          <!-- Servis 1 -->
+
+          <div class="service__box">
+            <img src="img/ucetnictvi.jpg" alt="ucetnictci">
+            <div class="service__box-body">
+              <h3>Účetnictví</h3>
+              <div class="details-line"></div>
+              <ul>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">vedení účetnictví</span></li>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">DPH a kontrolní hlášení</span></li>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">vystavování faktur</span></li>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">poradenství</span></li>
+              </ul>
+            </div>
+            <a href="#" class="service__btn">
+              Dozvědět se více <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+
+          <!-- Servis 2 -->
+
+          <div class="service__box">
+            <img src="img/mzdy-personalistika.jpg" alt="ucetnictci">
+            <div class="service__box-body">
+              <h3>Mzdy a personalistika</h3>
+              <div class="details-line"></div>
+              <ul>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">vypracování prac. smluv a dohod</span></li>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">přihlášky a odhlášky zaměstnanců</span></li>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">mzdy zaměstnanců</span></li>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">správa a evidence mzdových listů</span></li>
+              </ul>
+            </div>
+            <a href="#" class="service__btn">
+              Dozvědět se více <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+          <!-- Servis 3 -->
+
+          <div class="service__box">
+            <img src="img/ostatni-sluzby.jpg" alt="ucetnictci">
+            <div class="service__box-body">
+              <h3>Ostatní služby</h3>
+              <div class="details-line"></div>
+              <ul>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">daň z příjmů fyzických osob</span></li>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">daň z příjmů právnických osob</span></li>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">daň z přidané hodnoty</span></li>
+                <li><i class="fa-solid fa-check service__icon"></i><span class="service__list">daň silniční</span></li>
+              </ul>
+            </div>
+            <a href="#" class="service__btn">
+              Dozvědět se více <i class="fa-solid fa-angle-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT ========== -->
+
+    <section class="about section container">
+      <h2 class="section__title">O mně</h2>
+      <div class="about__content grid">
+        <div class="about__description">
+          <p>Jmenuji se Marcela Havlíčková a od roku 2015 jsem začala pracovat v jedné rodinné firmě, která se zabývá účetní činností živnostníků, velkých a malých firem.
+          </p>
+          <p>Během získávání zkušeností jsem absolvovala akreditované, rekvalifikační kurzy se závěrečnými zkouškami ověřené MŠMT v oboru – Účetnictví a daňová evidence, Mzdová účetní a Daňový specialista. Práce s klienty a vedením účetnictví mě začala naplňovat a stala i mým koníčkem a proto jsem se rozhodla splnit si své cíle a mít vlastní účetní firmu.
+          </p>
+          <p>Od roku 2021 jsem vedena jako OSVČ v oboru Činnost účetních poradců, vedení účetnictví, vedení daňové evidence. A neustále pracuji na zkvalitnění služeb vzděláváním se právě pro Vás. Osobně se zaměřuji na Účetnictví, mzdy a personalistiku.
+          </p>
+          <p>Svým klientům nabízím pečlivě a svědomitě vedené účetnictví tak, aby mohli s čistou hlavou podnikat a veškeré papírování a spolupráce s úřady přenechali na mě. Veškeré účetní služby nabízím formou jednorázových úkonů, ale také formou dlouhodobé spolupráce, a to všem živnostníkům, firmám, plátcům i neplátcům DPH.
+          </p>
+        </div>
+        <div class="about__experience">
+          <img class="about__image" src="img/o-mne.jpg" alt="o mně">
+          <div class="about__border">
+            <div class="about__numbers">
+              <span class="about__numbers-title">20+</span>
+              <span class="about__numbers-subtitle">spokojených klientů</span>
+            </div>
+            <div class="about__numbers">
+              <span class="about__numbers-title">5</span>
+              <span class="about__numbers-subtitle">let praxe v oboru</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BENEFITS ========== -->
+
+    <section class="benefits">
+      <div class="container grid">
+        <h2 class="section__title">Proč spolupracovat se mnou?</h2>
+        <div class="benefits__content">
+          <div class="benefits__item">
+            <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M44.7938 59H29.0891C28.6762 58.9977 28.2723 58.8794 27.9235 58.6585C27.5746 58.4376 27.2949 58.1231 27.1163 57.7509C26.9377 57.3786 26.8674 56.9637 26.9133 56.5534C26.9593 56.1431 27.1197 55.754 27.3762 55.4305C28.0669 54.5627 28.4408 53.4852 28.4359 52.3761C28.4136 51.0835 27.8845 49.8513 26.9624 48.9451C26.0404 48.0389 24.7993 47.531 23.5065 47.531C22.2137 47.531 20.9726 48.0389 20.0506 48.9451C19.1286 49.8513 18.5994 51.0835 18.5771 52.3761C18.5723 53.4852 18.9461 54.5627 19.6368 55.4305C19.8943 55.7551 20.0549 56.1459 20.1002 56.5578C20.1455 56.9696 20.0736 57.3859 19.8929 57.7588C19.7121 58.1317 19.4298 58.4459 19.0784 58.6655C18.727 58.8851 18.3207 59.001 17.9064 59H2.2016C1.6177 59 1.05772 58.768 0.644835 58.3552C0.231954 57.9423 0 57.3823 0 56.7984V36.5524C0 36.1436 0.113855 35.7428 0.328808 35.395C0.54376 35.0472 0.851318 34.7661 1.21702 34.5833C1.58272 34.4004 1.99211 34.323 2.39932 34.3597C2.80653 34.3965 3.19548 34.5458 3.52257 34.7912C4.2548 35.3416 5.1259 35.6771 6.03817 35.7601C6.95044 35.8431 7.8678 35.6703 8.68735 35.2611C9.50691 34.8519 10.1962 34.2225 10.678 33.4434C11.1599 32.6643 11.4151 31.7663 11.4151 30.8503C11.4151 29.9342 11.1599 29.0363 10.678 28.2572C10.1962 27.4781 9.50691 26.8487 8.68735 26.4395C7.8678 26.0302 6.95044 25.8574 6.03817 25.9404C5.1259 26.0235 4.2548 26.359 3.52257 26.9094C3.19548 27.1547 2.80653 27.3041 2.39932 27.3408C1.99211 27.3776 1.58272 27.3002 1.21702 27.1173C0.851318 26.9345 0.54376 26.6534 0.328808 26.3056C0.113855 25.9578 0 25.557 0 25.1481V14.2135C0 13.6296 0.231954 13.0696 0.644835 12.6567C1.05772 12.2439 1.6177 12.0119 2.2016 12.0119H14.5541C14.1366 10.6184 14.0506 9.1466 14.303 7.71396C14.5554 6.28132 15.1392 4.92751 16.0078 3.76058C16.8763 2.59365 18.0056 1.6459 19.3056 0.992966C20.6055 0.340035 22.0401 0 23.4948 0C24.9495 0 26.384 0.340035 27.684 0.992966C28.9839 1.6459 30.1132 2.59365 30.9818 3.76058C31.8504 4.92751 32.4342 6.28132 32.6866 7.71396C32.939 9.1466 32.853 10.6184 32.4355 12.0119H44.788C45.3719 12.0119 45.9318 12.2439 46.3447 12.6567C46.7576 13.0696 46.9896 13.6296 46.9896 14.2135V21.8736C48.3778 21.4801 49.8384 21.4139 51.2566 21.6801C52.6748 21.9463 54.012 22.5377 55.163 23.4079C56.3141 24.2781 57.2477 25.4033 57.8906 26.6951C58.5335 27.987 58.868 29.4103 58.868 30.8532C58.868 32.2962 58.5335 33.7195 57.8906 35.0113C57.2477 36.3032 56.3141 37.4284 55.163 38.2985C54.012 39.1687 52.6748 39.7601 51.2566 40.0263C49.8384 40.2926 48.3778 40.2263 46.9896 39.8328V56.7984C46.9896 57.3813 46.7584 57.9404 46.3468 58.3531C45.9352 58.7658 45.3767 58.9984 44.7938 59ZM32.5647 54.5968H42.5922V36.1738C42.5922 35.7488 42.7153 35.3329 42.9464 34.9762C43.1776 34.6196 43.5071 34.3375 43.895 34.164C44.283 33.9905 44.7129 33.933 45.1328 33.9985C45.5528 34.0639 45.9448 34.2495 46.2616 34.5328C46.9714 35.1658 47.8492 35.58 48.7891 35.7254C49.729 35.8708 50.691 35.7412 51.5589 35.3523C52.4268 34.9633 53.1637 34.3317 53.6808 33.5334C54.1978 32.7351 54.4729 31.8043 54.4729 30.8532C54.4729 29.9021 54.1978 28.9713 53.6808 28.1731C53.1637 27.3748 52.4268 26.7431 51.5589 26.3542C50.691 25.9652 49.729 25.8357 48.7891 25.981C47.8492 26.1264 46.9714 26.5406 46.2616 27.1736C45.9448 27.4569 45.5528 27.6425 45.1328 27.708C44.7129 27.7734 44.283 27.7159 43.895 27.5424C43.5071 27.3689 43.1776 27.0868 42.9464 26.7302C42.7153 26.3736 42.5922 25.9577 42.5922 25.5327V16.4151H28.6972C28.2676 16.415 27.8475 16.2893 27.4885 16.0534C27.1295 15.8175 26.8474 15.4818 26.6769 15.0875C26.5064 14.6933 26.4549 14.2577 26.5288 13.8346C26.6028 13.4115 26.7988 13.0192 27.0929 12.7061C27.7527 12.0054 28.193 11.1269 28.3594 10.1789C28.5259 9.23097 28.4112 8.25502 28.0296 7.37146C27.6479 6.48789 27.016 5.73536 26.2117 5.20667C25.4075 4.67798 24.4661 4.39627 23.5036 4.39627C22.5411 4.39627 21.5997 4.67798 20.7954 5.20667C19.9912 5.73536 19.3593 6.48789 18.9776 7.37146C18.596 8.25502 18.4813 9.23097 18.6477 10.1789C18.8142 11.1269 19.2544 12.0054 19.9142 12.7061C20.2083 13.0192 20.4044 13.4115 20.4783 13.8346C20.5523 14.2577 20.5008 14.6933 20.3303 15.0875C20.1597 15.4818 19.8776 15.8175 19.5187 16.0534C19.1597 16.2893 18.7395 16.415 18.31 16.4151H4.40908V21.7518C5.09306 21.5975 5.79209 21.5197 6.49326 21.5199C7.80656 21.5213 9.10477 21.7999 10.303 22.3374C11.5013 22.8749 12.5726 23.6592 13.447 24.6391C14.3214 25.619 14.9792 26.7724 15.3773 28.0239C15.7754 29.2754 15.9049 30.5968 15.7574 31.9018C15.6098 33.2068 15.1885 34.466 14.521 35.597C13.8535 36.728 12.9549 37.7054 11.8838 38.4653C10.8127 39.2253 9.59323 39.7506 8.3052 40.007C7.01718 40.2634 5.68954 40.245 4.40908 39.9532V54.5968H14.4366C14.0992 53.2225 14.0786 51.7895 14.3764 50.4062C14.6743 49.0228 15.2829 47.7252 16.156 46.6117C17.0292 45.4981 18.1442 44.5977 19.4166 43.9785C20.689 43.3593 22.0856 43.0375 23.5007 43.0375C24.9157 43.0375 26.3123 43.3593 27.5847 43.9785C28.8571 44.5977 29.9721 45.4981 30.8453 46.6117C31.7185 47.7252 32.327 49.0228 32.6249 50.4062C32.9227 51.7895 32.9021 53.2225 32.5647 54.5968Z" fill="#944B22"/>
+              </svg>
+            <h4 class="benefits__item-title">Komplexní služby</h4>
+          </div>
+          <div class="benefits__item">
+            <svg width="39" height="59" viewBox="0 0 39 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31.8373 45.0889H6.69982C6.0943 45.0889 5.60644 45.5754 5.60644 46.1833C5.60644 46.7911 6.09194 47.2797 6.69982 47.2797H31.8373C32.4408 47.2797 32.9293 46.7911 32.9293 46.1833C32.9293 45.5754 32.4452 45.0889 31.8373 45.0889Z" fill="#944B22"/>
+              <path d="M31.8373 50.0796H19.2691C18.6632 50.0796 18.1737 50.5681 18.1737 51.176C18.1737 51.7795 18.6612 52.2704 19.2691 52.2704H31.8369C32.4448 52.2704 32.931 51.7839 32.931 51.176C32.931 50.5681 32.4452 50.0796 31.8373 50.0796Z" fill="#944B22"/>
+              <path d="M8.81846 35.5408C8.81846 38.9794 29.7146 38.9794 29.7146 35.5408C29.7146 32.634 26.366 28.7065 21.8435 27.5589C23.7339 26.2891 25.038 23.7784 25.038 21.5212C25.038 18.3341 22.4554 15.7485 19.267 15.7485C16.0779 15.7485 13.4984 18.3341 13.4984 21.5212C13.4984 23.7784 14.8002 26.2912 16.6878 27.5589C12.1721 28.7068 8.81846 32.634 8.81846 35.5408ZM18.8001 29.2341H18.7755L17.8207 28.1347C18.2856 28.3033 18.762 28.4037 19.267 28.4037C19.7711 28.4037 20.2485 28.3053 20.7134 28.1411L19.7546 29.2365H19.7323L22.2009 35.1939L19.267 38.1197L16.3365 35.1939L18.8001 29.2341Z" fill="#944B22"/>
+              <path d="M35.1241 2.84052C35.467 3.67328 35.6966 4.54582 35.6966 5.4396V7.75447C35.7708 8.06026 35.82 8.3765 35.82 8.70388V52.2011C35.82 54.4512 33.9907 56.2803 31.7425 56.2803H6.79422C4.54712 56.2803 2.71809 54.4512 2.71809 52.2011V8.70354C2.71809 6.45476 4.54712 4.62539 6.79422 4.62539H23.8388C23.9541 3.64193 24.241 2.71612 24.7299 1.90527H6.79422C3.04648 1.90527 0 4.95377 0 8.70354V52.2008C0 55.9515 3.04648 59 6.79422 59H31.7425C35.4893 59 38.5358 55.9515 38.5358 52.2008V8.70354C38.5381 6.19178 37.1541 4.01785 35.1241 2.84052Z" fill="#944B22"/>
+              <path d="M29.7186 15.5338C32.4367 15.5338 34.6457 13.0949 34.6457 10.0996V5.43652C34.6498 4.37922 34.3622 3.39981 33.8882 2.56536L32.7324 3.72111C32.9583 4.24066 33.0955 4.8165 33.0955 5.43652V10.0976C33.0955 12.2419 31.5784 13.9809 29.7183 13.9826C27.8566 13.9805 26.3455 12.2419 26.3455 10.0976V5.43652C26.3455 3.29495 27.8603 1.55426 29.7227 1.55223C30.2894 1.55426 30.8167 1.73294 31.2871 2.01615L32.4077 0.892095C31.634 0.334789 30.7122 0.00202289 29.7227 0C27.0005 0 24.7915 2.4386 24.7915 5.43618L24.7892 10.0993C24.7895 13.0949 27.0005 15.5318 29.7186 15.5338Z" fill="#944B22"/>
+              </svg>
+            <h4 class="benefits__item-title">Osobní přístup</h4>
+          </div>
+          <div class="benefits__item">
+            <svg width="30" height="59" viewBox="0 0 30 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M25.8701 38.88C27.6747 37.2345 28.8766 35.0635 29.3041 32.4477C30.9704 22.2563 21.8519 19.4953 15.8217 17.6746L14.3697 17.2275C7.56744 15.1187 7.04198 13.759 7.47065 11.1535C7.64707 10.0768 8.12921 9.28786 8.99289 8.66905C10.6914 7.45218 13.5954 7.07075 16.9706 7.6286C18.2082 7.83026 19.7777 8.28382 21.7712 9.01487C23.6818 9.70628 25.8021 8.73393 26.5005 6.8185C27.1987 4.90676 26.2162 2.78876 24.3052 2.08698C21.8404 1.18331 19.886 0.632721 18.1656 0.351549C12.8106 -0.54509 8.0134 0.290325 4.69465 2.67813C2.24246 4.4388 0.687376 6.95897 0.194289 9.96544C-0.597141 14.8191 1.13379 17.9765 3.62643 20.1314C1.82877 21.6756 0.622961 23.9457 0.194289 26.5615C-1.4508 36.633 7.76219 39.4908 12.1803 40.8621L13.6772 41.3192C21.134 43.5732 22.541 44.6714 22.0224 47.8403C21.8751 48.7262 21.4647 50.001 19.576 50.8549C17.8164 51.6507 15.3112 51.8235 12.5006 51.3698C10.5716 51.0638 8.20008 50.1599 6.10627 49.3636L4.98009 48.9351C3.07642 48.2257 0.952646 49.1943 0.237041 51.0957C-0.475569 53.004 0.488943 55.0252 2.39653 55.8422L3.487 56.2564C5.91268 57.1782 8.66563 58.2292 11.3252 58.6475C12.7322 58.8815 14.107 58.9969 15.4207 58.9969C18.0906 58.9969 20.5232 58.5178 22.6113 57.5749C26.293 55.9109 28.6646 52.8791 29.2972 49.0337C30.0877 44.2039 28.4398 41.058 25.8701 38.88ZM7.47065 27.7484C7.85127 25.4115 9.91592 24.5103 11.8599 24.1715C11.9666 24.2048 13.6818 24.7306 13.6818 24.7306C21.1386 26.9846 22.5456 28.0828 22.0236 31.2552C21.6444 33.583 19.5898 34.4898 17.6528 34.8321C17.0204 34.6309 14.3697 33.8233 14.3697 33.8233C7.56744 31.7125 7.04198 30.3527 7.47065 27.7484Z" fill="#944B22"/>
+              </svg>
+            <h4 class="benefits__item-title">Odpovědnost</h4>
+          </div>
+          <div class="benefits__item">
+            <svg width="59" height="59" viewBox="0 0 59 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30.7718 0.401948C30.0085 -0.133983 28.9915 -0.133983 28.2283 0.401948L0.941186 19.566C0.151349 20.1207 -0.187853 21.1234 0.103052 22.0437C0.393926 22.964 1.24776 23.5895 2.2129 23.5895H5.89727V47.1917H4.42136C3.44373 47.1917 2.58199 47.8331 2.30156 48.7698L0.0931679 56.1457C-0.107397 56.8154 0.0204712 57.5406 0.438034 58.1018C0.855597 58.6626 1.5137 58.9931 2.21296 58.9931H56.7871C57.486 58.9931 58.1439 58.6629 58.5617 58.1024C58.9792 57.5418 59.1075 56.8169 58.9075 56.1472L56.7047 48.7713C56.4247 47.834 55.5627 47.1917 54.5843 47.1917H53.1021V23.5895H56.7871C57.7521 23.5895 58.6059 22.964 58.8968 22.0437C59.1877 21.1234 58.8488 20.1207 58.0589 19.566L30.7718 0.401948ZM13.2586 47.1917H10.3228V23.5895H13.2586V47.1917ZM6.06865 51.6172H52.936L53.8169 54.5676H5.18529L6.06865 51.6172ZM17.6841 47.1917V23.5895H23.6066V47.1917H17.6841ZM30.968 47.1917H28.0321V23.5895H30.968V47.1917ZM41.3151 47.1917H35.3935V23.5895H41.3151V47.1917ZM48.6765 47.1917H45.7407V23.5895H48.6765V47.1917ZM49.7862 19.164L9.21384 19.1639L29.4999 4.91672L49.7862 19.164Z" fill="#944B22"/>
+              </svg>
+            <h4 class="benefits__item-title">Zastoupení na úřadech</h4>
+          </div>
+          <div class="benefits__item">
+            <svg width="48" height="59" viewBox="0 0 48 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M36.0288 42.8521L36.0219 42.8715C35.3368 44.8247 34.4842 47.2556 32.1397 48.0169C31.7242 48.151 31.2901 48.2188 30.8535 48.2178C29.1526 48.2178 27.6988 47.2665 26.2985 46.3054L29.7924 58.0921C29.8619 58.3268 29.9979 58.5363 30.1838 58.6954C30.3698 58.8546 30.5978 58.9565 30.8404 58.989C31.083 59.0215 31.3298 58.9831 31.551 58.8785C31.7723 58.7739 31.9586 58.6075 32.0874 58.3994L34.5944 54.3521C34.73 54.1331 34.9292 53.9605 35.1653 53.8575C35.4014 53.7544 35.6633 53.7257 35.9162 53.7751L40.5885 54.6883C40.8287 54.7353 41.0773 54.7118 41.3045 54.6206C41.5316 54.5295 41.7275 54.3746 41.8686 54.1746C42.0097 53.9747 42.09 53.7381 42.0997 53.4936C42.1094 53.2491 42.0481 53.0069 41.9233 52.7964L36.0288 42.8521Z" fill="#944B22"/>
+              <path d="M17.0992 48.2175C16.6626 48.2185 16.2286 48.1508 15.813 48.0167C13.6505 47.3143 12.7602 45.1954 12.097 43.3374L6.49013 52.7962C6.36533 53.0068 6.3041 53.2489 6.3138 53.4934C6.32351 53.738 6.40375 53.9745 6.54484 54.1745C6.68594 54.3744 6.88186 54.5293 7.109 54.6205C7.33614 54.7116 7.58479 54.7351 7.82497 54.6881L12.4974 53.775C12.7502 53.7255 13.0121 53.7543 13.2483 53.8573C13.4844 53.9604 13.6835 54.1329 13.8192 54.352L16.3259 58.3992C16.4548 58.6073 16.641 58.7737 16.8623 58.8783C17.0835 58.9829 17.3303 59.0213 17.5728 58.9888C17.8154 58.9563 18.0434 58.8544 18.2293 58.6952C18.4152 58.5361 18.5512 58.3266 18.6207 58.0919L22.2317 45.9105C22.0923 46.005 21.9581 46.0968 21.8408 46.1776C20.3829 47.1809 18.8751 48.2175 17.0992 48.2175Z" fill="#944B22"/>
+              <path d="M47.9535 22.8906C47.9535 20.5395 43.3232 18.9492 42.6342 16.8277C41.9202 14.6291 44.7067 10.6254 43.3747 8.79534C42.0295 6.94693 37.352 8.36663 35.5037 7.02205C33.6735 5.68994 33.5864 0.796057 31.3877 0.0818699C29.2661 -0.607082 26.3277 3.27866 23.9765 3.27866C21.6253 3.27866 18.6873 -0.606984 16.5659 0.0819674C14.3672 0.795764 14.28 5.68994 12.4499 7.02195C10.6016 8.36702 5.92414 6.94703 4.57888 8.79524C3.24697 10.6252 6.03327 14.629 5.31938 16.8277C4.63052 18.9493 0 20.5399 0 22.8908C0 25.2418 4.63052 26.8323 5.31986 28.9537C6.03376 31.1523 3.24755 35.1559 4.57937 36.986C5.92453 38.8344 10.6019 37.4147 12.4503 38.7593C14.2803 40.0913 14.3675 44.9853 16.5663 45.6995C18.6879 46.3884 21.6262 42.5027 23.9776 42.5027C26.3289 42.5027 29.2669 46.3884 31.3885 45.6996C33.5869 44.9856 33.6742 40.0914 35.5043 38.7596C37.3527 37.4145 42.0301 38.8344 43.3754 36.9863C44.7074 35.1562 41.9211 31.1526 42.6349 28.9539C43.323 26.8325 47.9535 25.2422 47.9535 22.8906ZM23.9826 35.6754C21.4541 35.6754 18.9824 34.9256 16.88 33.5208C14.7776 32.1161 13.139 30.1194 12.1714 27.7834C11.2038 25.4474 10.9506 22.8768 11.4438 20.3969C11.9371 17.917 13.1547 15.639 14.9426 13.8511C16.7305 12.0631 19.0084 10.8455 21.4883 10.3522C23.9683 9.85886 26.5388 10.112 28.8748 11.0796C31.2109 12.0472 33.2076 13.6857 34.6124 15.7881C36.0172 17.8904 36.767 20.3621 36.7671 22.8906C36.7671 24.5695 36.4364 26.232 35.794 27.7831C35.1515 29.3342 34.2098 30.7436 33.0227 31.9308C31.8355 33.1179 30.4262 34.0596 28.8751 34.7021C27.324 35.3446 25.6615 35.6753 23.9826 35.6754V35.6754Z" fill="#944B22"/>
+              <path d="M29.5972 19.8108H27.1972C26.922 19.8108 26.6538 19.7237 26.4311 19.5619C26.2085 19.4002 26.0428 19.172 25.9577 18.9103L25.2161 16.6277C25.131 16.366 24.9653 16.1379 24.7426 15.9762C24.52 15.8144 24.2518 15.7273 23.9766 15.7273C23.7014 15.7273 23.4333 15.8144 23.2106 15.9762C22.988 16.1379 22.8222 16.366 22.7372 16.6277L21.9956 18.9103C21.9105 19.172 21.7448 19.4001 21.5222 19.5619C21.2995 19.7237 21.0314 19.8108 20.7561 19.8108H18.3562C18.0808 19.8107 17.8126 19.8977 17.5898 20.0595C17.367 20.2213 17.2012 20.4495 17.1161 20.7113C17.0311 20.9731 17.0311 21.2552 17.1163 21.517C17.2014 21.7788 17.3673 22.007 17.5901 22.1687L19.5318 23.5795C19.7544 23.7413 19.9201 23.9694 20.0051 24.2311C20.0902 24.4929 20.0902 24.7748 20.0051 25.0365L19.2635 27.319C19.1786 27.5807 19.1788 27.8626 19.2639 28.1242C19.349 28.3858 19.5147 28.6138 19.7373 28.7754C19.9599 28.9371 20.228 29.0242 20.5031 29.0242C20.7782 29.0242 21.0463 28.9372 21.2689 28.7755L23.2109 27.365C23.4335 27.2032 23.7017 27.116 23.9769 27.116C24.2521 27.116 24.5203 27.2032 24.7429 27.365L26.6843 28.7755C26.9069 28.9372 27.1751 29.0243 27.4503 29.0243C27.7255 29.0243 27.9936 28.9371 28.2162 28.7754C28.4389 28.6136 28.6046 28.3855 28.6896 28.1238C28.7747 27.8621 28.7747 27.5801 28.6897 27.3184L27.948 25.0359C27.863 24.7742 27.863 24.4922 27.9481 24.2305C28.0332 23.9688 28.1989 23.7407 28.4215 23.5789L30.3632 22.1681C30.5858 22.0063 30.7514 21.7782 30.8364 21.5165C30.9214 21.2548 30.9214 20.9729 30.8364 20.7112C30.7513 20.4495 30.5856 20.2215 30.363 20.0597C30.1404 19.898 29.8723 19.8108 29.5972 19.8108Z" fill="#944B22"/>
+              </svg>
+            <h4 class="benefits__item-title">Profesionalita</h4>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container grid">
+        <div class="contact__title">
+          <h2 class="section__title">Kontaktujte mě pro nabídku</h2>
+          <p>nebo mi rovnou zavolejte na <a href="tel:+420725092074">+420 725 092 074</a></p>
+        </div>
+        <div class="contact__content">
+          <div class="contact__info">
+            <h3>Marcela Havlíčková</h3>
+            <div class="line-left details-line"></div>
+            <ul>
+              <li><span>IČ:</span>13961403</li>
+              <li><span>Kancelář:</span>Štefánikova 55/49, 284 01 Kutná Hora</li>
+              <li><span>Telefon:</span>+420 725 092 074</li>
+              <li><span>E-mail:</span>ucetnictvi.mh@email.cz</li>
+            </ul>
+          </div>
+
+          <div class="contact__box">
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Jméno</label>
+                <input type="text" name="user_name" class="contact__form-input" required id="contact-name">
+              </div>
+              <div class="contact__form-div">
+                <label class="contact__form-tag">E-mail</label>
+                <input type="email" name="user_email" class="contact__form-input" required id="contact-email">
+              </div>
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Vaše zpráva</label>
+                <textarea name="user_message" id="contact-message" class="contact__form-input"></textarea>
+              </div>
+              <button class="contact__button" type="submit">
+                Odeslat
+              </button>
+            </form>
+
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d763.2541143360661!2d15.274946124426954!3d49.950026315752616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c410635cc37bd%3A0xd4c09ed20b667b8f!2zxaB0ZWbDoW5pa292YSA1NS80OSwgSGxvdcWha2EsIDI4NCAwMSBLdXRuw6EgSG9yYSwgxIxlc2tv!5e0!3m2!1scs!2sus!4v1671459424205!5m2!1scs!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="footer__menu section">
+      <div class="footer__items container grid">
+        <a href="#">
+          <img class="nav__logo" src="img/logo.svg" alt="logo">
+        </a>
+        <ul class="footer__list-section">
+          <li><a href="#sluzby">Služby</a></li>
+          <li><a href="#o-mne">O mně</a></li>
+          <li><a href="#cenik">Ceník</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+
+        <ul class="footer__list-contact">
+          <h5>Adresa kanceláře</h5>
+          <li>Štefánikova 55/49</li>
+          <li>284 01 Kutná Hora</li>
+          <li><a class="footer_list-link" href="https://www.google.com/maps/place/%C5%A0tef%C3%A1nikova+55%2F49,+Hlou%C5%A1ka,+284+01+Kutn%C3%A1+Hora,+%C4%8Cesko/@49.9500263,15.2749461,18.75z/data=!4m5!3m4!1s0x470c410635cc37bd:0xd4c09ed20b667b8f!8m2!3d49.9496497!4d15.2750582">ukázat na mapě</a></li>
+          <li>otevírací doba dle dohody s klientem</li>
+        </ul>
+
+        <ul class="footer__list-contact">
+          <h5>Kontaktní údaje</h5>
+          <li>tel: +420 725 092 074</li>
+          <li>e-mail: ucetnictvi.mh@email.cz</li>
+          <li>IČ: 13961403</li>
+        </ul>
+
+        <div class="footer__description">
+          <p class="footer__copy">&copy <span id="currentYear">2022</span> Marcela Havlíčková</p>
+          <p class="footer__copy">Created by <a class="footer_list-link" href="www.lajkr.cz">LAJKR</a></p>
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

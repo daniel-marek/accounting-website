@@ -1,0 +1,19 @@
+@use "../abstracts/" as *;
+
+.benefits {
+  padding: 4rem 0 4rem;
+  background: var(--bg-white-alt);
+  text-align: center;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  &__item h4{
+    margin-bottom: 0;
+  }
+}
+
+.benefits__item svg {
+  max-height: rem(50);
+}

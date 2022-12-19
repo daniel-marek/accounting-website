@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 4rem;
+  &__menu {
+    background: var(--bg-grey);
+  }
+  &__list {
+    &-section li a {
+      font-weight: 600;
+      transition: .5s;
+      &:hover {
+        color: var(--details-bronz);
+      }
+    }
+  }
+  .footer_list-link {
+    color: var(--details-bronz);
+    text-decoration: underline;
+  }
+  &__copy {
+    margin-bottom: 0;
+  }
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+  filter: grayscale(100%);
+  transition: .5s;
+  &:hover {
+    filter: grayscale(0%);
+  }
+}
