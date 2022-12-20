@@ -3,5 +3,50 @@
 .hero {
   padding-top: calc($header-height + 1rem);
   padding-bottom: 2rem;
+  @include breakpoint (medium) {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @include breakpoint (large) {
+    min-height: 100vh;
+    
+  }
+  &__content {
+    position: relative;
+    @include breakpoint (medium) {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+    
+  }
+  &__img {
+    max-width: 100%;
+    @include breakpoint (large) {
+      width: 100%;
+    }
+    // position: absolute;
+    // transform: translateX(-70%);
+    &-bg {
+      // background-color: var(--bg-grey);
+      // width: 258px;
+      // height: 430px;
+      // padding-bottom: 2rem;
+      // display: flex;
+      // justify-content: center;
+      // align-items: flex-end;
+      // justify-self: flex-end;
+      // transform: translateX(1.5rem);
+      @include breakpoint (medium) {
+        order: 2;
+      }
+      @include breakpoint (large) {
+        justify-self: end;
+      }
+    }
+  }
 }
+
+
 

@@ -1,4 +1,4 @@
-@use "../abstracts/" as a;
+@use "../abstracts/" as *;
 
 .section {
   padding: 4rem 0 2rem;
@@ -6,8 +6,11 @@
 
 .container {
   max-width: 968px;
-  margin-left: a.rem(24);
-  margin-right: a.rem(24);
+  margin-left: rem(24);
+  margin-right: rem(24);
+  @include breakpoint (large) {
+    max-width: 1200px;
+  }
 }
 
 .grid {

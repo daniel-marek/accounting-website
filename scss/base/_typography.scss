@@ -36,6 +36,12 @@ h5 {
 //   }
 // }
 
+@include a.breakpoint(large) {
+  h1 {
+    font-size: a.rem(62);
+  }
+}
+
 p {
   margin-top: 0;
   line-height: 1.8; // 33/18

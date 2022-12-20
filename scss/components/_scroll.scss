@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+/* ============ SCROLL BAR =========== */
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: $border-radius;
+  background-color: var(--scroll-bar);
+  &-thumb {
+    background-color: var(--scroll-thumb);
+    border-radius: $border-radius;
+    &:hover {
+      background-color: var(--details-grey-light);
+    }
+  }
+}

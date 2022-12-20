@@ -7,6 +7,10 @@
   top: 0;
   left: 0;
   z-index: 10;
+  @include breakpoint (large) {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
 }
 
 .nav {
@@ -14,15 +18,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include breakpoint (large) {
+    height: calc($header-height + 1.5rem);
+    max-width: 1400px;
+    margin: 0 auto;
+  }
   &__logo {
     height: 60px;
   }
   &__menu {
-    // position: fixed;
-    //   background: var(--bg-white-alt);
-    //   padding: 2.5rem;
-    //   width: 100%;
-    //   top: -100%;
+    display: flex;
+    justify-content: center;
     @include breakpoint-down (medium) {
       position: fixed;
       background: var(--bg-white-alt);
@@ -36,18 +42,44 @@
       transition: .4s;
       z-index: 11;
     }
+    @include breakpoint (large) {
+      flex-direction: row;
+    }
   }
   &__list {
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 2.5rem;
+    @include breakpoint (large) {
+      flex-direction: row;
+      column-gap: 2.5rem;
+
+    }
+  }
+  &__link {
+    font-weight: 500;
+    transition: .5s;
+    &:hover {
+      color: var(--details-bronz);
+    }
   }
   &__btn {
     display: none;
+    @include breakpoint (large) {
+      display: block;
+      background: transparent;
+      border: 2px solid var(--details-black);
+      &:hover {
+        border: 0;
+      }
+    }
     &-hamb {
       background: transparent;
       border: 2px solid var(--details-black);
+      @include breakpoint (large) {
+        display: none;
+      }
       &:hover {
         color: var(--text-white);
         border: 0;
@@ -58,6 +90,9 @@
   &__toggle, &__close {
     font-size: 1.5rem;
     cursor: pointer;
+    @include breakpoint (large) {
+    display: none;
+    }
   } 
 
   &__close {
@@ -81,4 +116,5 @@
 /*Scroll menu */
 .scroll-header {
   background: var(--bg-white-alt);
+  box-shadow: 0 1px 4px rgba($color: #000000, $alpha: 0.1);
 }
