@@ -183,6 +183,11 @@ button {
   margin-bottom: 2rem;
 }
 
+@media (min-width: 43.75em) {
+  #uvod {
+    background: linear-gradient(to right, transparent 0%, transparent 65%, var(--details-grey) 65%, var(--details-grey) 100%);
+  }
+}
 .service__items {
   gap: 1.5rem;
 }

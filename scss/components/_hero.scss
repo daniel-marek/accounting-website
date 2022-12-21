@@ -56,5 +56,19 @@
   }
 }
 
+@include breakpoint(medium) {
+
+  #uvod {
+    background: linear-gradient(
+      to right, 
+      transparent 0%,
+      transparent 65%,
+      var(--details-grey) 65%,
+      var(--details-grey) 100%
+    );
+  }
+}
+
+
 
 
