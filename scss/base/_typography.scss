@@ -13,9 +13,9 @@ h1 {
 // h2 {
 //   font-size: a.rem(28);
 // }
-// h3 {
-//   font-size: a.rem(20);
-// }
+h3 {
+  font-size: a.rem(19);
+}
 h4 {
   font-size: a.rem(20);
 }
@@ -39,6 +39,12 @@ h5 {
 @include a.breakpoint(large) {
   h1 {
     font-size: a.rem(62);
+  }
+  h2 {
+    font-size: a.rem(38);
+  }
+  h3 {
+    font-size: a.rem(22);
   }
 }
 

@@ -1,11 +1,6 @@
 @use "../abstracts/" as *;
 
 .service {
-  @include breakpoint (large) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   &__items {
     gap: 1.5rem;
     @include breakpoint (large) {
@@ -27,7 +22,7 @@
     &-body {
       text-align: center;
       & h3 {
-        margin-bottom: 0.2rem;
+        margin-bottom: 0.6rem;
       }
     }
   }
@@ -37,6 +32,9 @@
   &__list {
     padding-left: 0.6rem;
     font-size: 0.875rem;
+    @include breakpoint(large) {
+      font-size: rem(16);
+    }
   }
   &__btn {
     display: inline-flex;

@@ -7,10 +7,6 @@
   top: 0;
   left: 0;
   z-index: 10;
-  @include breakpoint (large) {
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-  }
 }
 
 .nav {
@@ -21,7 +17,6 @@
   @include breakpoint (large) {
     height: calc($header-height + 1.5rem);
     max-width: 1400px;
-    margin: 0 auto;
   }
   &__logo {
     height: 60px;

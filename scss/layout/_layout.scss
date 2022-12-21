@@ -2,18 +2,18 @@
 
 .section {
   padding: 4rem 0 2rem;
+  @include breakpoint(large) {
+    padding: 5rem 0 3rem;
+  }
   &__title {
     margin-bottom: 2.5rem;
   }
 }
 
 .container {
-  max-width: 968px;
-  margin-left: rem(24);
-  margin-right: rem(24);
-  @include breakpoint (large) {
-    max-width: 1200px;
-  }
+  max-width: 75rem;
+  margin-inline: auto;
+  padding-inline: rem(24);
 }
 
 .grid {
