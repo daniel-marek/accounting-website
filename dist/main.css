@@ -138,48 +138,33 @@ button {
 }
 @media (min-width: 43.75em) {
   .hero {
-    min-height: 50vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 50vh;
   }
 }
 @media (min-width: 56.25em) {
   .hero {
     min-height: 100vh;
+    align-items: center;
   }
 }
-.hero__content {
-  position: relative;
-}
 @media (min-width: 43.75em) {
-  .hero__content {
+  .hero__container {
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     align-items: center;
   }
 }
-.hero__img {
-  max-width: 100%;
-}
-@media (min-width: 56.25em) {
-  .hero__img {
-    width: 100%;
-  }
-}
 @media (min-width: 43.75em) {
-  .hero__img-bg {
+  .hero__img {
+    justify-self: end;
     order: 2;
   }
 }
-@media (min-width: 56.25em) {
-  .hero__img-bg {
-    justify-self: end;
-  }
-}
-.hero__description h1 {
+.hero__title h1 {
   margin-bottom: 2rem;
 }
-.hero__description p {
+.hero__title p {
   margin-bottom: 2rem;
 }
 
