@@ -1,0 +1,32 @@
+@use "../abstracts/" as *;
+
+.page__container {
+  max-width: 1400px;
+  border: $border;
+  border-radius: $border-radius;
+  background-color: var(--bg-white-alt);
+  padding-top: 3rem;
+}
+
+.details-line-page {
+  margin-bottom: 2rem;
+}
+
+.list-flex {
+  display: flex;
+  flex-direction: column;
+  i {
+    margin-bottom: .8rem;
+  }
+}
+
+.service__box-page {
+  border: none;
+}
+
+.service__title-page {
+  text-align: center;
+}
+
+
+

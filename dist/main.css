@@ -12,6 +12,7 @@
   --details-black: #333533;
   --scroll-bar: #D9DAD7;
   --scroll-thumb: #B9BABB;
+  --bg-table-th: #B9BABB;
 }
 
 /*======= Fonts =======*/
@@ -165,6 +166,10 @@ button {
   margin-bottom: 2rem;
 }
 .hero__title p {
+  margin-bottom: 2rem;
+}
+
+.list-page {
   margin-bottom: 2rem;
 }
 
@@ -485,8 +490,8 @@ button {
 @media (min-width: 56.25em) {
   .nav__list {
     flex-direction: row;
-    -moz-column-gap: 2.5rem;
-         column-gap: 2.5rem;
+    -moz-column-gap: 4.5rem;
+         column-gap: 4.5rem;
   }
 }
 .nav__link {
@@ -603,4 +608,85 @@ iframe {
 }
 iframe:hover {
   filter: grayscale(0%);
+}
+
+.page__container {
+  max-width: 1400px;
+  border: 3px solid var(--details-grey);
+  border-radius: 5px;
+  background-color: var(--bg-white-alt);
+  padding-top: 3rem;
+}
+
+.details-line-page {
+  margin-bottom: 2rem;
+}
+
+.list-flex {
+  display: flex;
+  flex-direction: column;
+}
+.list-flex i {
+  margin-bottom: 0.8rem;
+}
+
+.service__box-page {
+  border: none;
+}
+
+.service__title-page {
+  text-align: center;
+}
+
+.price__section {
+  margin-top: 2rem;
+}
+.price__footer {
+  margin-top: 2rem;
+}
+
+.table {
+  width: 100%;
+  border-top: 1px solid var(--details-grey);
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 1px solid var(--details-grey);
+}
+.table--pricing {
+  margin: 10px 0;
+  table-layout: fixed;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+.table--pricing th:last-child {
+  text-align: center;
+}
+.table--pricing td:last-child {
+  text-align: right;
+  font-weight: 600;
+}
+.table--pricing th:last-child, .table--pricing td:last-child {
+  width: 6.25rem;
+}
+@media (min-width: 43.75em) {
+  .table--pricing th:last-child, .table--pricing td:last-child {
+    width: 12.5rem;
+  }
+}
+.table th {
+  color: var(--text-black);
+  background: var(--bg-table-th);
+}
+.table th, .table td {
+  text-align: left;
+  padding: 10px;
+  line-height: 1.2;
+  border-top: 0;
+  border-right: 1px solid var(--details-grey);
+  border-bottom: 1px solid var(--details-grey);
+  border-left: 0;
+}
+
+.price__section + .price__section {
+  padding-top: 2rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ========== GOOGLE FONTS ========== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- ========== FONT AWESOME ========== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ========== CSS ========== -->
+  <link rel="stylesheet" href="dist/main.css">
+
+  <!-- ========== FAVICON ========== -->
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+
+  <title>Marcela Havlíčková - účetnictví</title>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+
+  <header class="header" id="header">
+    <nav class="nav container">
+        <a href="index.html">
+          <img class="nav__logo" src="img/logo.svg" alt="logo">
+        </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html">Úvod</a></li>
+            <li><a class="nav__link" href="index.html#sluzby">Služby</a></li>
+            <li><a class="nav__link" href="index.html#o-mne">O mně</a></li>
+            <li><a class="nav__link" href="cenik.html">Ceník</a></li>
+            <li><a class="nav__link" href="#kontakt">Kontakt</a></li>
+            <li><a class="nav__btn-hamb btn" href="#kontakt">Nezávazná poptávka</a></li>  
+          </ul>
+        </div>
+      <a href="#kontakt" class="nav__btn btn">Nezávazná poptávka</a>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars icon-black"></i>
+      </div>
+      <div class="nav__close" id="nav-close">
+        <i class="fa-solid fa-xmark icon-black"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+
+    <section class="hero" id="uvod">
+      <div class="hero__container container grid">
+        <img src="img/cenik.jpg" alt="" class="hero__img">
+        <div class="hero__title">
+          <h1>Ceník</h1>
+          <a href="#kontakt" class="hero__btn btn">Domluvit si schůzku</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="container">
+        <h2>Ceník</h2>
+        <p>Ceník služeb je stanoven v měsíčním paušálu. Konečná cena se může lišit dle časové náročnosti a množství účetních zápisů. Každé účetnictví je individuální a proto se konečná cena stanovuje po dohodě s klientem. Ceny jsou uvedeny bez DPH.</p>
+        <div class="price__section">
+          <h3>Účetnictví</h3>
+          <div class="table__wrapper">
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Položka - NEPLÁTCE DPH</th>
+                  <th>Cena</th>
+                </tr>
+                <tr>
+                  <td>Paušál do 50ti dokládů</td>
+                  <td>2500 Kč</td>
+                </tr>
+                <tr>
+                  <td>51-100 dokladů příplatek</td>
+                  <td>1500 Kč</td>
+                </tr>
+                <tr>
+                  <td>101-150 dokladů příplatek</td>
+                  <td>1500 Kč</td>
+                </tr>
+                <tr>
+                  <td>151-200 dokladů příplatek</td>
+                  <td>1500 Kč</td>
+                </tr>
+                <tr>
+                  <td>201 a více dokladů příplatek</td>
+                  <td>Indiv. sjednaná cena</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Položka - PLÁTCE DPH</th>
+                  <th>Cena</th>
+                </tr>
+                <tr>
+                  <td>Paušál do 50ti dokládů</td>
+                  <td>3000 Kč</td>
+                </tr>
+                <tr>
+                  <td>51-100 dokladů příplatek</td>
+                  <td>2000 Kč</td>
+                </tr>
+                <tr>
+                  <td>101-150 dokladů příplatek</td>
+                  <td>2000 Kč</td>
+                </tr>
+                <tr>
+                  <td>151-200 dokladů příplatek</td>
+                  <td>2000 Kč</td>
+                </tr>
+                <tr>
+                  <td>201 a více dokladů příplatek</td>
+                  <td>Indiv. sjednaná cena</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Položka</th>
+                  <th>Cena</th>
+                </tr>
+                <tr>
+                  <td>Vystavení faktur (FAV)</td>
+                  <td>200 Kč/kus</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="price__section">
+          <h3>Mzdy a personalistika</h3>
+          <div class="table__wrapper">
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Položka</th>
+                  <th>Cena</th>
+                </tr>
+                <tr>
+                  <td>Zpracování mzdy 1 ZAMĚSTNANEC / měsíc (HPP)</td>
+                  <td>500 Kč</td>
+                </tr>
+                <tr>
+                  <td>Zpracování mzdy 1 ZAMĚSTNANEC / měsíc (DPP, DPČ)</td>
+                  <td>500 Kč</td>
+                </tr>
+                <tr>
+                  <td>Zpracování 1 spisu EXEKUCE do mezd / měsíc <br>(každá exekuce – výpočet, součinnost s exekutorem, administrativa spojená s exekucí)</td>
+                  <td>200 Kč</td>
+                </tr>
+                <tr>
+                  <td>Personální administrativa <br>(smlouvy, daňové prohlášení, zúčtování, přihlášení a odhlášení zaměstnance (ČSSZ, ZP)</td>
+                  <td>200 Kč</td>
+                </tr>
+                <tr>
+                  <td>Roční zúčtování zaměstnance</td>
+                  <td>500 Kč</td>
+                </tr>
+                <tr>
+                  <td>Roční vyúčtování zálohové / srážkové daně </td>
+                  <td>500 Kč</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="price__section">
+          <h3>Ostatní služby</h3>
+          <div class="table__wrapper">
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Položka - DAŇOVÁ PŘIZNÁNÍ</th>
+                  <th>Cena</th>
+                </tr>
+                <tr>
+                  <td>Daň z příjmu fyzických osob (DPFO) včetně přehledů pro pojišťovnu</td>
+                  <td>2000 Kč</td>
+                </tr>
+                <tr>
+                  <td>Příjmy z podnikání §7 skutečné výdaje</td>
+                  <td>od 2000 Kč</td>
+                </tr>
+                <tr>
+                  <td>Daň z příjmu právnických osob (DPPO)</td>
+                  <td>od 3000 Kč</td>
+                </tr>
+                <tr>
+                  <td>Rozvaha + výkaz zisků a ztrát + příloha</td>
+                  <td>2500 Kč</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Položka - DAŇ Z PŘIDANÉ HODNOTY</th>
+                  <th>Cena</th>
+                </tr>
+                <tr>
+                  <td>Jednoduché přiznání / Souhrnné hlášení, kontrolní hlášení</td>
+                  <td>1500 Kč</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Položka - SILNIČNÍ DAŇ</th>
+                  <th>Cena</th>
+                </tr>
+                <tr>
+                  <td>Do počtu 3 automobilů / včetně výpočtu záloh </td>
+                  <td>1200 Kč</td>
+                </tr>
+                <tr>
+                  <td>Za každý další automobil </td>
+                  <td>500 Kč</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Položka - DAŇ Z NEMOVITOSTI</th>
+                  <th>Cena</th>
+                </tr>
+                <tr>
+                  <td>Daň z nemovitosti </td>
+                  <td>2000 Kč</td>
+                </tr>
+                <tr>
+                  <td>Daň z nabytí nemovitosti </td>
+                  <td>2000 Kč</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table--pricing">
+              <tbody>
+                <tr>
+                  <th>Položka - DÁLE NABÍZÍM</th>
+                  <th>Cena</th>
+                </tr>
+                <tr>
+                  <td>ROČNÍ ZPRACOVÁNÍ ÚČETNICTVÍ (jednorázové)</td>
+                  <td>Indiv. sjednaná cena</td>
+                </tr>
+                <tr>
+                  <td>REKONSTRUKCE ÚČETNICTVÍ (jednorázová) </td>
+                  <td>Indiv. sjednaná cena</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="price__footer"><strong>Dokladem se rozumí:</strong> 1 přijatá faktura / 1 vydaná faktura / 1 interní doklad / 1 položka banky apod. (jeden účetní doklad obsahuje většinou několik účetních zápisů).</p>
+        <p><strong>Paušál zahrnuje:</strong> vedení pokladní knihy, peněžního deníku, saldokonta dodavatelů a odběratelů a evidenci majetku. U plátců DPH zahrnuje také evidenci DPH.</p>
+        <p><strong>Paušál nezahrnuje:</strong> inventarizaci, roční uzávěrku a daňové přiznání z příjmu FO, PO a kontrolního hlášení. Taktéž nezahrnuje roční přehledy zdravotního a sociálního pojištění.</p>
+      </div>
+    </section>
+
+    
+
+    <section class="contact section" id="kontakt">
+      <div class="container">
+        <div class="contact__title">
+          <h2 class="section__title">Kontaktujte mě pro nabídku</h2>
+          <p>nebo mi rovnou zavolejte na <a href="tel:+420725092074">+420 725 092 074</a></p>
+        </div>
+        <div class="contact__content grid">
+          <div class="contact__info">
+            <h3>Marcela Havlíčková</h3>
+            <div class="line-left details-line"></div>
+            <ul>
+              <li><span>IČ:</span>13961403</li>
+              <li><span>Kancelář:</span>Štefánikova 55/49, 284 01 Kutná Hora</li>
+              <li><span>Telefon:</span>+420 725 092 074</li>
+              <li><span>E-mail:</span>ucetnictvi.mh@email.cz</li>
+            </ul>
+          </div>
+
+          <div class="contact__box">
+            <form action="" class="contact__form" id="contact-form">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Jméno</label>
+                <input type="text" name="user_name" class="contact__form-input" required id="contact-name">
+              </div>
+              <div class="contact__form-div">
+                <label class="contact__form-tag">E-mail</label>
+                <input type="email" name="user_email" class="contact__form-input" required id="contact-email">
+              </div>
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Vaše zpráva</label>
+                <textarea name="user_message" id="contact-message" class="contact__form-input"></textarea>
+              </div>
+              <button class="contact__button" type="submit">
+                Odeslat
+              </button>
+            </form>
+
+          </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d763.2541143360661!2d15.274946124426954!3d49.950026315752616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c410635cc37bd%3A0xd4c09ed20b667b8f!2zxaB0ZWbDoW5pa292YSA1NS80OSwgSGxvdcWha2EsIDI4NCAwMSBLdXRuw6EgSG9yYSwgxIxlc2tv!5e0!3m2!1scs!2sus!4v1671459424205!5m2!1scs!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="footer__menu">
+      <div class=" container ">
+      <div class="footer__items grid">
+        <a href="#">
+          <img class="nav__logo" src="img/logo.svg" alt="logo">
+        </a>
+        <ul class="footer__list-section">
+          <li><a href="index.html#sluzby">Služby</a></li>
+          <li><a href="index.html#o-mne">O mně</a></li>
+          <li><a href="cenik.html">Ceník</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+
+        <ul class="footer__list-contact">
+          <h5>Adresa kanceláře</h5>
+          <li>Štefánikova 55/49</li>
+          <li>284 01 Kutná Hora</li>
+          <li><a class="footer_list-link" href="https://www.google.com/maps/place/%C5%A0tef%C3%A1nikova+55%2F49,+Hlou%C5%A1ka,+284+01+Kutn%C3%A1+Hora,+%C4%8Cesko/@49.9500263,15.2749461,18.75z/data=!4m5!3m4!1s0x470c410635cc37bd:0xd4c09ed20b667b8f!8m2!3d49.9496497!4d15.2750582" target="_blank">ukázat na mapě</a></li>
+          <li>otevírací doba dle dohody s klientem</li>
+        </ul>
+
+        <ul class="footer__list-contact">
+          <h5>Kontaktní údaje</h5>
+          <li>tel: +420 725 092 074</li>
+          <li>e-mail: ucetnictvi.mh@email.cz</li>
+          <li>IČ: 13961403</li>
+        </ul>
+
+      </div>
+      <div class="footer__description">
+          <p class="footer__copy">&copy <span id="currentYear">2022</span> Marcela Havlíčková</p>
+          <p class="footer__copy">Created by <a class="footer_list-link" href="https://www.lajkr.cz" target="_blank">LAJKR</a></p>
+      </div>
+    </div>
+
+
+      
+
+    </div>
+
+
+  </footer>
+  
+  <script src="js/main.js"></script>
+</body>
+</html>

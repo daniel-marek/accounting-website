@@ -1,0 +1,26 @@
+/*========== VARIABLES CSS ==========*/
+:root {
+  /*======= Colors =======*/
+  --bg-white: #FEFAFA;
+  --bg-white-alt: #FFFFFF;
+  --bg-grey: #B9BABB;
+  --text-black: #333533;
+  --text-white: #fff;
+  --details-bronz: #944B22;
+  --details-grey: #B9BABB;
+  --details-grey-light: #c4c4c4;
+  --details-black: #333533;
+  --scroll-bar: #D9DAD7;
+  --scroll-thumb: #B9BABB;
+}
+
+/*======= Fonts =======*/
+/*======= Heights =======*/
+/*======= Borders =======*/
+/*======= Box shadow =======*/
+/*======= Breakpoints map =======*/
+@media (min-width: 56.25em) {
+  .service__items-page {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*# sourceMappingURL=ucetnictvi.css.map */
