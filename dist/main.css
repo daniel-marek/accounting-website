@@ -689,4 +689,12 @@ iframe:hover {
 
 .price__section + .price__section {
   padding-top: 2rem;
+}
+
+.error {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
