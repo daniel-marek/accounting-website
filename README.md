@@ -1,0 +1,1 @@
+Tvorba jednoduchého webu pro účetní. Zadání bylo - hezký, čistý design bez výrazných barev. 
